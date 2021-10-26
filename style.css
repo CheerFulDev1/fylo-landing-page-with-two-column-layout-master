@@ -6,6 +6,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: hsl(243, 87%, 12%);
     font-size: 1rem;
+    margin: 0;
 }
 
 .container{
@@ -19,7 +20,7 @@ img{
     max-width: 90%;
 }
 
-h1, h2{
+h1, h2, h4{
     font-family: 'Raleway', sans-serif;
     font-size: 2.1rem;
 }
@@ -55,6 +56,11 @@ nav ul a{
     font-family: 'Raleway', sans-serif;
     color: hsl(243, 87%, 12%);
     text-decoration: none;
+    font-weight: 400;
+}
+
+nav ul a:hover{
+    font-weight: 700;
 }
 
 form{
@@ -84,7 +90,55 @@ button:hover{
 }
 
 .light-blueish{
-    background-image: url("./images/bg-curve-desktop.svg");
-    background-repeat: no-repeat;
+    background-color: #F8F8FE;
+    margin-top: 200px;
+    position: relative;
+}
+
+.light-blueish::before{
+    content: '';
+    background-image: url('./images/bg-curve-desktop.svg');
+    position: absolute;
     background-size: cover;
+    top: -214px;
+    height: 114px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.green{
+    color: #3da08f;
+}
+
+.testimonial-box{
+    margin-top: 30px;
+    background-color: #fff;
+    width: 80%;
+    padding: 25px;
+    box-shadow: 0px 0px 10px rgba(88, 89, 137, 0.1);
+    border-radius: 5px;
+}
+
+.testimonial-box p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+.user-info{
+    display: flex;
+    margin-top: 20px;
+}
+
+.user-info img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info h4{
+    margin: 0;
+    font-weight: 700;
+    font-size: 1rem;
 }
