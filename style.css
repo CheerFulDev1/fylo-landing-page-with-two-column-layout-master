@@ -22,7 +22,8 @@ img{
 
 h1, h2, h4{
     font-family: 'Raleway', sans-serif;
-    font-size: 2.1rem;
+    font-size: 2.2rem;
+    margin-top: 0;
 }
 
 .flex{
@@ -93,6 +94,7 @@ button:hover{
     background-color: #F8F8FE;
     margin-top: 200px;
     position: relative;
+    padding-bottom: 100px;
 }
 
 .light-blueish::before{
@@ -141,4 +143,63 @@ button:hover{
     margin: 0;
     font-weight: 700;
     font-size: 1rem;
+}
+
+.blueish{
+    background-color: hsl(238, 22%, 44%);
+    color: #fff;
+    padding: 50px 0;
+}
+
+.blueish p{
+    padding-right: 50px;
+}
+
+.blueish form{
+    flex-direction: column;
+}
+
+.blueish form input{
+    flex: 1;
+    width: 100%;
+    border: none;
+}
+
+.blueish form button{
+    margin: 20px 0;
+}
+
+footer{
+    padding-top: 50px;
+    background-color: hsl(243, 87%, 12%);
+}
+
+.footer-logo{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+footer ul li img{
+    margin-right: 15px;
+}
+
+footer ul li{
+    margin-bottom: 20px;
+}
+
+.social i{
+    margin-left: 10px;
+    font-size: 32px;
 }
