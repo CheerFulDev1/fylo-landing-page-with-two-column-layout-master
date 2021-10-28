@@ -1,81 +1,87 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     color: hsl(243, 87%, 12%);
     font-size: 1rem;
     margin: 0;
 }
 
-.container{
+.container {
     width: 1200px;
     max-width: 100%;
     padding: 20px;
     margin: 0 auto;
 }
 
-img{
+img {
     max-width: 90%;
 }
 
-h1, h2, h4{
+h1,
+h2,
+h4 {
     font-family: 'Raleway', sans-serif;
     font-size: 2.2rem;
     margin-top: 0;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.flex > div{
+.flex>div {
     flex: 1;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 30px 0;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li{
+nav ul li {
     margin-left: 50px;
 }
 
-nav ul a{
+nav ul a {
     font-family: 'Raleway', sans-serif;
     color: hsl(243, 87%, 12%);
     text-decoration: none;
     font-weight: 400;
 }
 
-nav ul a:hover{
+nav ul a:hover {
     font-weight: 700;
 }
 
-form{
+form {
     margin: 20px 20px 20px 0px;
 }
 
-input{
+input {
     border: 1px solid hsl(243, 87%, 12%);
     border-radius: 2px;
     padding: 15px;
     min-width: 60%;
 }
 
-button{
+input::placeholder {
+    color: rgba(7, 4, 57, 0.4);
+}
+
+button {
     border: 1px solid hsl(224, 93%, 58%);
     background-color: hsl(224, 93%, 58%);
     border-radius: 2px;
@@ -84,20 +90,20 @@ button{
     min-width: 35%;
 }
 
-button:hover{
+button:hover {
     background-color: hsl(170, 45%, 43%);
     border: 1px solid hsl(170, 45%, 43%);
     box-shadow: 0px 0px 5px hsl(0, 0%, 75%);
 }
 
-.light-blueish{
+.light-blueish {
     background-color: #F8F8FE;
     margin-top: 200px;
     position: relative;
     padding-bottom: 100px;
 }
 
-.light-blueish::before{
+.light-blueish::before {
     content: '';
     background-image: url('./images/bg-curve-desktop.svg');
     position: absolute;
@@ -108,11 +114,11 @@ button:hover{
     margin-top: 100px;
 }
 
-.green{
+.green {
     color: #3da08f;
 }
 
-.testimonial-box{
+.testimonial-box {
     margin-top: 30px;
     background-color: #fff;
     width: 80%;
@@ -121,85 +127,188 @@ button:hover{
     border-radius: 5px;
 }
 
-.testimonial-box p{
+.testimonial-box p {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 1.7;
 }
 
-.user-info{
+.user-info {
     display: flex;
     margin-top: 20px;
 }
 
-.user-info img{
+.user-info img {
     width: 50px;
     height: auto;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.user-info h4{
+.user-info h4 {
     margin: 0;
     font-weight: 700;
     font-size: 1rem;
 }
 
-.blueish{
+.blueish {
     background-color: hsl(238, 22%, 44%);
     color: #fff;
     padding: 50px 0;
 }
 
-.blueish p{
+.blueish p {
     padding-right: 50px;
 }
 
-.blueish form{
+.blueish form {
     flex-direction: column;
 }
 
-.blueish form input{
+.blueish form input {
     flex: 1;
     width: 100%;
     border: none;
 }
 
-.blueish form button{
+.blueish form button {
     margin: 20px 0;
 }
 
-footer{
+footer {
     padding-top: 50px;
     background-color: hsl(243, 87%, 12%);
 }
 
-.footer-logo{
+.footer-logo {
     color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #fff;
 }
 
-footer ul{
+footer ul {
     padding-left: 0;
     list-style-type: none;
 }
 
-footer ul li img{
+footer ul li img {
     margin-right: 15px;
 }
 
-footer ul li{
+footer ul li {
     margin-bottom: 20px;
 }
 
-.social i{
+.social i {
     margin-left: 10px;
     font-size: 32px;
+}
+
+@media screen and (max-width: 560px) {
+    nav {
+        margin: 0;
+    }
+    nav img {
+        width: 80px;
+        height: auto;
+    }
+    nav ul li {
+        margin-left: 20px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .header-img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    h1,
+    h2,
+    h4 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    form {
+        margin: 0;
+    }
+    input {
+        border: 1px solid hsl(243, 87%, 12%);
+        border-radius: 2px;
+        padding: 15px;
+        width: 100%;
+    }
+    button {
+        margin-top: 20px;
+        border: 1px solid hsl(224, 93%, 58%);
+        background-color: hsl(224, 93%, 58%);
+        border-radius: 2px;
+        padding: 15px 30px;
+        color: #fff;
+        width: 100%;
+    }
+    .light-blueish {
+        background-color: #F8F8FE;
+        margin-top: 100px;
+        position: relative;
+        padding-bottom: 100px;
+    }
+    .light-blueish::before {
+        background-image: url('./images/bg-curve-mobile.svg');
+        height: 53px;
+        top: -52px;
+        margin-top: 0;
+    }
+    .section-img {
+        margin-bottom: 70px;
+    }
+    .light-blueish p {
+        text-align: left;
+        font-size: 15px;
+        color: hsl(238, 22%, 44%);
+    }
+    .testimonial-box {
+        text-align: left;
+        width: 100%;
+        padding: 25px;
+    }
+    .testimonial-box p {
+        font-size: 10px;
+    }
+    .early-access {
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .early-access form {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .early-access p {
+        padding-right: 0;
+        font-size: 15px;
+        color: hsl(0, 0%, 75%);
+        margin-bottom: 30px;
+    }
+    .footer {
+        margin-left: 20px;
+    }
+    .footer-logo {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .social i {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
 }
